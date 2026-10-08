@@ -4,7 +4,7 @@ def guessing_game():
     secret = random.randint(1, 100)
     attempts = 0
 
-    print("I'm thinking about a number between 1 and 15. Can you guess?")
+    print("I'm thinking about a number between 1 and 100. Can you guess?")
 
     while True:
         try:
@@ -20,7 +20,10 @@ def guessing_game():
         elif guess > secret:
             print("Too high")
         else:
-            print(f"correct! You got it in {attempts} attempts")
+            if attempts < 10:
+                print(f"Your good at this You got it in {attempts} attempts")
+            elif attempts >10:
+                print(f"You got it in {attempts} attempts. You can do better than that common try again")
             break
                 
 guessing_game()
