@@ -27,3 +27,23 @@ def guessing_game():
             break
                 
 guessing_game()
+
+while True:
+    Answer = input("Do you want to Continue? (Y/N): ").strip().upper()
+    
+    # 1. Catch numbers immediately
+    if Answer.isdigit():
+        print("Invalid input! Numbers are not allowed.\n")
+        continue
+
+    # 2. Check for exact valid answers
+    if Answer in ["Y", "YES"]:
+        guessing_game()
+        break
+    elif Answer in ["N", "NO"]:
+        print("Thanks for playing!")
+        break
+    else:
+        # This catches "Yellow", "Yikes", or random letters
+        print("Invalid choice. Please type Y or N.\n")
+
