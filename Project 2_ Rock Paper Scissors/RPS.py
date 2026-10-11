@@ -1,10 +1,10 @@
 import random
 
 def rock_paper_scissors():
-    choices = ["rock", "paper", "scissors"]
+    choices = ["rock", "paper", "scissors","spock","lizard"]
 
     #define what beats what
-    beats = {"rock": "scissors", "paper": "rock", "scissors": "paper"}
+    beats = {"rock": "scissors","rock": "lizard", "paper": "rock","paper": "spock", "scissors": "paper","scissors":"lizard", "lizard": "spock", "lizard":"paper", "spock":"rock", "spock": "scissors", }
 
     player_score = 0
     computer_score = 0
