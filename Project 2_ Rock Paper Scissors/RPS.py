@@ -10,7 +10,7 @@ def rock_paper_scissors():
     computer_score = 0
 
     while player_score < 3 and computer_score < 3:
-        player = input("Make your choice rock/paper/scissors (or 'quit'): ").lower()
+        player = input("Make your choice rock/paper/scissors/spock/lizard (or 'quit'): ").lower()
 
         if player == "quit":
             break
