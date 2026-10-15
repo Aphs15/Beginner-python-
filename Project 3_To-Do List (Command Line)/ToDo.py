@@ -1,10 +1,14 @@
 import json
 import os
 
-FILE = "todos.json"
+# This looks up the exact folder where script lives
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+# This creates a perfect path directly to the file inside that folder
+FILE = os.path.join(SCRIPT_DIR, "todos.json")
+
 
 def load_todos():
-    if os.path.exist(FILE):
+    if os.path.exists(FILE):
         with open(FILE, "r") as f:
             return json.load(f)
     return []

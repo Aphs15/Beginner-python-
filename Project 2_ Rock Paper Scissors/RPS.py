@@ -1,5 +1,7 @@
 import random
 
+print("welcome hello player are you able to beat me first to 3 wins gets the W?")
+
 def rock_paper_scissors():
     choices = ["rock", "paper", "scissors","spock","lizard"]
 
@@ -39,3 +41,4 @@ def rock_paper_scissors():
 
 
 rock_paper_scissors()
+
